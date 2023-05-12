@@ -1,0 +1,78 @@
+\documentclass[12pt]{report}
+\usepackage{amssymb}
+\usepackage{amsmath}
+\usepackage{graphicx}
+\usepackage{multicol}
+\usepackage{subfig}
+\usepackage{lscape}
+\usepackage[document]{ragged2e}
+\usepackage[colorinlistoftodos]{todonotes}
+\usepackage{tikz}
+\usepackage[final]{pdfpages}
+\usepackage{dirtytalk}
+\usepackage{hyperref} 
+\usetikzlibrary{shapes.geometric, arrows}
+\usepackage[utf8]{inputenc}
+\usepackage{multirow}
+\usepackage{datetime}
+\newdateformat{monthyeardate}{%
+  \monthname[\THEMONTH], \THEYEAR}
+\usepackage[english]{babel}
+\usepackage{wrapfig}
+\usepackage{rotating}
+\usepackage{epstopdf}
+\usepackage{fancyhdr}
+\pagestyle{fancy}
+\fancyhead{}
+\fancyhead[LO,LE]{\scriptsize \mytitle}
+\fancyfoot[CE,CO]{\footnotesize \thepage}
+\setlength{\topmargin}{0.0in}
+\setlength{\oddsidemargin}{0.33in}
+\setlength{\evensidemargin}{-0.08in}
+\setlength{\textheight}{8.5in}
+\setlength{\textwidth}{6.0in}
+
+\def\mytitle{VoIP, Its Uses and Approach towards its Security}
+\def\myname{Nitesh / Nitesh Mali}
+\def\mydegree{Under Graduate}
+\def\mysupervisor{Prof. Dipika S. Dabhade}
+\def\myrollno{72151683B}
+\def\mydep{Comp. Department}
+\def\mydegreedate{4\textsuperscript{th} September, 2024}
+
+\begin{document}
+ \baselineskip=18pt plus1pt
+ \setcounter{secnumdepth}{3}
+ \setcounter{tocdepth}{3}
+ \pagenumbering{roman}
+ 
+ %Front Matter
+ \include{./Formalities/title_page}
+ \include{./Formalities/certificate}
+ \include{./Formalities/abstract}
+  \include{./Formalities/acknowledgements}
+ \tableofcontents
+ 
+ 
+ %Main material
+ \clearpage
+ \pagenumbering{arabic}
+ 
+ \include{Chapters/chap_1}
+
+ \include{Chapters/chap_2}
+
+ \include{Chapters/chap_3}
+ 
+ \include{Chapters/chap_4}
+ 
+ \include{Chapters/chap_5}
+
+ \include{Chapters/chap_6}
+ 
+ \include{Chapters/chap_7}
+\renewcommand{\bibname}{Bibliography}
+\newpage
+\include{biblography}
+
+\end{document}
